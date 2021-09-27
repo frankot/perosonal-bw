@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 .container { 
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+    @apply max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8;
   }
 
 #anim:before {
@@ -53,3 +53,27 @@
 .btn_nav {
   @apply font-light relative
 }
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ece6e6;
+ 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(17, 24, 39);
+  border-radius: 8px;
+}
+/* 
+Handle on hover
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(20, 30, 39)
+} */

@@ -1,0 +1,33 @@
+<div class="container grid grid-cols-3 h-[60vh] gap-10" x-data="{scroll: true}">
+    <div class="relative">
+        <h1 class="text-lg font-semibold tracking-widest uppercase -rotate-90 absolute -left-1/4 top-1/4"
+        x-show="!scroll"
+        @scroll.window="scroll = (window.pageYOffset > 201) ? false : true"
+        x-transition:enter="transition ease-in-out duration-1000"
+        x-transition:enter-start="opacity-0 transform translate-y-1/2 scale-y-0"
+        x-transition:enter-end="opacity-100 transform translate-y-0 scale-y-100"
+        x-transition:leave="transition ease-out duration-500"
+        x-transition:leave-start="opacity-100 transform translate-y-0"
+        x-transition:leave-end="opacity-0 transform -translate-y-1/2">About</h1>
+        <p class="leading-7 tracking-wider font-light">Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Sint autem inventore nemo itaque reprehenderit illo reiciendis earum sunt illum maiores sed, obcaecati
+            eaque explicabo, eius quaerat quis pariatur aspernatur. Inventore. Lorem, ipsum. Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Expedita ut exercitationem repellat obcaecati! Eaque impedit sapiente ipsam
+            quia perspiciatis dolore iusto aut repellendus deleniti vitae, magnam tempora explicabo rerum possimus!</p>
+    </div>
+    <div>
+        
+    </div>
+    <!-- <div class="text-center col-span-2" x-show="!scroll"
+        @scroll.window="scroll = (window.pageYOffset > 301) ? false : true"
+        x-transition:enter="transition ease-in-out duration-1000"
+        x-transition:enter-start="opacity-0 transform translate-y-1/2 scale-y-0"
+        x-transition:enter-end="opacity-100 transform translate-y-0 scale-y-100"
+        x-transition:leave="transition ease-out duration-500"
+        x-transition:leave-start="opacity-100 transform translate-y-0"
+        x-transition:leave-end="opacity-0 transform -translate-y-1/2">
+        <h1 class="font-light tracking-wider uppercase border-t-2 border-gray-900 inline-block">project no.1</h1>
+        <img src="/assets/img/real.est.png" alt="">
+    </div> -->
+
+</div>

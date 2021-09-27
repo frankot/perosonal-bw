@@ -3,15 +3,15 @@
         display: none !important
     }
 </style>
-<div class="container h-[484px] mt-32 flex justify-center items-center">
+<div class="container h-[484px] mt-44 flex justify-center items-center">
     <div class=" w-[85%] h-[70%] uppercase">
 
         <h2 class="tracking-wider font-semibold mb-10 ml-1">I'm Frank</h2>
         <h1 class="text-8xl font-thin tracking-wide text-center">I create websites</h1>
-        <div class="ml-[185px] mt-5 flex flex-col" x-cloak x-data="{ scrollTop: true, scrollTop2: true, scrollTop3: true }">
+        <div class="ml-40 mt-5 flex flex-col" x-cloak x-data="{ scrollTop: true, scrollTop2: true, scrollTop3: true }">
             <div>
                 <h3 class=" ml-12 text-3xl font-light tracking-wide leading-relaxed lowercase" x-show="!scrollTop"
-                    @scroll.window="scrollTop = (window.pageYOffset > 2) ? false : true"
+                    @scroll.window="scrollTop = (window.pageYOffset > 1) ? false : true"
                     x-transition:enter="transition ease-in-out duration-700"
                     x-transition:enter-start="opacity-0 transform translate-y-[-115%]"
                     x-transition:enter-end="opacity-100 transform translate-y-0"
@@ -20,8 +20,8 @@
                     x-transition:leave-end="opacity-0 transform -translate-y-1/2">modern</h3>
             </div>
             <div>
-                <h3 class="ml-52 text-3xl font-light tracking-wide leading-relaxed lowercase " x-show="!scrollTop2"
-                    @scroll.window="scrollTop2 = (window.pageYOffset > 30) ? false : true"
+                <h3 class="ml-40 text-3xl font-light tracking-wide leading-relaxed lowercase " x-show="!scrollTop2"
+                    @scroll.window="scrollTop2 = (window.pageYOffset > 101) ? false : true"
                     x-transition:enter="transition ease-in-out duration-700"
                     x-transition:enter-start="opacity-0 transform translate-y-[-115%]"
                     x-transition:enter-end="opacity-100 transform translate-y-0"
@@ -30,8 +30,8 @@
                     x-transition:leave-end="opacity-0 transform -translate-y-1/2">simple</h3>
             </div>
             <div>
-                <h3 class="ml-[22rem] text-3xl font-light tracking-wide leading-relaxed lowercase " x-show="!scrollTop3"
-                    @scroll.window="scrollTop3 = (window.pageYOffset > 55) ? false : true"
+                <h3 class="ml-64 text-3xl font-light tracking-wide leading-relaxed lowercase " x-show="!scrollTop3"
+                    @scroll.window="scrollTop3 = (window.pageYOffset > 201) ? false : true"
                     x-transition:enter="transition ease-in-out duration-700"
                     x-transition:enter-start="opacity-0 transform translate-y-[-115%]"
                     x-transition:enter-end="opacity-100 transform translate-y-0"
