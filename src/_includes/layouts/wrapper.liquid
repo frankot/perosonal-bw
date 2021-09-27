@@ -1,0 +1,31 @@
+---
+title: def
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if description %}
+    <meta name="description" content="{{description}}" />
+    {% endif %}
+    <title>{{ title }}</title>
+
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css?v={% version %}" />
+
+</head>
+
+<body class="bg-[#ece6e6] text-gray-900 font-custom sm:hidden md:block">
+
+
+    {% block content %}
+    {{ content | safe }}
+    {% endblock %}
+
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</body>
+
+</html>
