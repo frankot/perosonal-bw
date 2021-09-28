@@ -70,10 +70,14 @@
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgba(17, 24, 39);
-  border-radius: 8px;
+
 }
 /* 
 Handle on hover
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(20, 30, 39)
 } */
+
+html {
+  scroll-behavior: smooth;
+}
