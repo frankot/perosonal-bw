@@ -6,6 +6,9 @@ module.exports = {
     extend: {
       fontFamily: {
         'custom': ['Roboto', 'ui-monospace'],
+      },
+      colors: {
+        'main': '#ece6e6' 
       }
     },
   },
