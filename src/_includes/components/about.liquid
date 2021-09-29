@@ -1,5 +1,5 @@
 <div class="container h-[60vh]" x-data="{scroll: true}">
-    <div class=" grid grid-cols-2 ml-5 gap-44  -mt-24" x-show="!scroll"
+    <div class=" grid md:grid-cols-3 lg:grid-cols-2 ml-5 md:gap-48 lg:gap-32 xl:-mt-24" x-show="!scroll"
         @scroll.window="scroll = (window.pageYOffset > 201) ? false : true"
         x-transition:enter="transition ease-in-out duration-1000"
         x-transition:enter-start="opacity-0 transform translate-y-1/4"
@@ -7,9 +7,9 @@
         x-transition:leave="transition ease-out duration-500"
         x-transition:leave-start="opacity-100 transform translate-y-0"
         x-transition:leave-end="opacity-0 transform translate-y-1/4">
-        <div class="mt-12 leading-7 tracking-wide font-light px-10 relative">
-            <h1 class="tracking-widest font-light lg:text-xl xl:text-3xl ">ABOUT</h1>
-            <p class="mt-10 lg:text-base tracking-wide  xl:text-lg ">My name is Franciszek Otrębski. I work as a Python programmer based in Warsaw,
+        <div class="mt-12 leading-7 tracking-wide font-light px-10 relative md:col-span-2 lg:col-span-1">
+            <h1 class="tracking-widest font-light md:text-xl xl:text-3xl ">ABOUT</h1>
+            <p class=" md:mt-6 lg:mt-10 tracking-wide  lg:text-lg md:mr-10 lg:mr-0">My name is Franciszek Otrębski. I work as a Python programmer based in Warsaw,
                 Poland.
                 But what I really love
                  is writing and desigining aesthetically pleasing, minimalistic, modern websites from scratch.  <br> I
