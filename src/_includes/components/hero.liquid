@@ -3,14 +3,14 @@
         display: none !important
     }
 </style>
-<div class="container h-[484px] mt-40 flex justify-center items-center">
+<div class="container md:h-[300px] xl:h-[484px] md:mt-40  flex justify-center items-center">
     <div class=" w-[85%] h-[70%] uppercase">
 
-        <h2 class="tracking-wider font-semibold mb-8 mt-2 ml-1" id="about">I'm Frank</h2>
-        <h1 class="text-8xl font-thin tracking-wide text-center">I create websites</h1>
+        <h2 class=" font-semibold md:mb-4 xl:mb-8 mt-2 ml-1 md:text-sm md:tracking-widest lg:text-base lg:tracking-wider" id="about">I'm Frank</h2>
+        <h1 class="md:text-6xl lg:text-7xl xl:text-8xl font-thin tracking-wide text-center">I create websites</h1>
         <div class="ml-40 mt-5 flex flex-col" x-cloak x-data="{ scrollTop: true, scrollTop2: true, scrollTop3: true }">
             <div>
-                <h3 class=" ml-12 text-3xl font-light tracking-wide leading-relaxed lowercase" x-show="!scrollTop"
+                <h3 class=" md:ml-4 xl:ml-12 md:text-xl lg:text-2xl xl:text-3xl font-light tracking-wide leading-relaxed lowercase" x-show="!scrollTop"
                     @scroll.window="scrollTop = (window.pageYOffset > 1) ? false : true"
                     x-transition:enter="transition ease-in-out duration-700"
                     x-transition:enter-start="opacity-0 transform translate-y-[-85%]"
@@ -20,7 +20,7 @@
                     x-transition:leave-end="opacity-0 transform -translate-y-1/2">modern</h3>
             </div>
             <div>
-                <h3 class="ml-40 text-3xl font-light tracking-wide leading-relaxed lowercase " x-show="!scrollTop2"
+                <h3 class="md:ml-24 xl:ml-40 md:text-xl lg:text-2xl xl:text-3xl font-light tracking-wide leading-relaxed lowercase " x-show="!scrollTop2"
                     @scroll.window="scrollTop2 = (window.pageYOffset > 101) ? false : true"
                     x-transition:enter="transition ease-in-out duration-700"
                     x-transition:enter-start="opacity-0 transform translate-y-[-85%]"
@@ -30,7 +30,7 @@
                     x-transition:leave-end="opacity-0 transform -translate-y-1/2">simple</h3>
             </div>
             <div>
-                <h3 class="ml-64 text-3xl font-light tracking-wide leading-relaxed lowercase " x-show="!scrollTop3"
+                <h3 class="md:ml-44 xl:ml-[16.5rem] md:text-xl lg:text-2xl xl:text-3xl font-light tracking-wide leading-relaxed lowercase " x-show="!scrollTop3"
                     @scroll.window="scrollTop3 = (window.pageYOffset > 201) ? false : true"
                     x-transition:enter="transition ease-in-out duration-700"
                     x-transition:enter-start="opacity-0 transform translate-y-[-85%]"
