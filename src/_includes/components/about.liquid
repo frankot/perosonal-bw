@@ -1,5 +1,5 @@
 <div class="container h-[60vh]" x-data="{scroll: true}">
-    <div class=" grid grid-cols-2  gap-44  -mt-24" x-show="!scroll"
+    <div class=" grid grid-cols-2 ml-5 gap-44  -mt-24" x-show="!scroll"
         @scroll.window="scroll = (window.pageYOffset > 201) ? false : true"
         x-transition:enter="transition ease-in-out duration-1000"
         x-transition:enter-start="opacity-0 transform translate-y-1/4"
@@ -10,13 +10,13 @@
         <div class="mt-12 leading-7 tracking-wider font-light px-10 relative">
             <h1 class="tracking-tight font-light text-3xl ">ABOUT</h1>
             <p class="mt-10 text-lg ">My name is Franciszek Otrębski. I work as a Python programmer based in Warsaw,
-                Poland. <br>
+                Poland.
                 But what I really love
-                 is writing and desigining aesthetically pleasing, minimalistic, modern websites from scratch. I
+                 is writing and desigining aesthetically pleasing, minimalistic, modern websites from scratch.  <br> I
                 don't
                 use Wordpress, Wix or insert already made elements. I simply enjoy doing everything by myself.
             </p>
-            <div class="flex items-center absolute -left-24 bottom-[28%] bg-main ">
+            <div class="flex items-center absolute -left-24 bottom-[35%] bg-main ">
                 <img src="/assets/img/me3.jpg" alt="" class="h-28 rounded-tl-lg rounded-bl-lg" >
             </div>
         </div>
