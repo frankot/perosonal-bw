@@ -6,11 +6,11 @@
 <div class="container md:h-[300px] xl:h-[484px] md:mt-40  flex justify-center items-center relative">
     <div class=" w-[85%] h-[70%] uppercase "  x-data="{ scrollTop: true, scrollTop2: true, scrollTop3: true }">
 
-        <h2 class=" font-semibold md:mb-4 xl:mb-8 mt-2 xl:ml-1 md:ml-4 lg:ml-24 md:text-sm md:tracking-widest lg:text-base lg:tracking-wider"
+        <h2 class="inline-block font-semibold md:mb-4 xl:mb-8 mt-2 xl:ml-1 md:ml-20 lg:ml-24 md:text-sm md:tracking-wider lg:text-base "
             id="about"><a href="#create"> I'm Frank</a></h2>
         <h1 class="md:text-6xl lg:text-7xl xl:text-8xl font-thin tracking-wide text-center" id="create">I create
             websites</h1>
-        <div class="md:ml-36 lg:ml-72 xl:ml-40 mt-5 flex flex-col " x-cloak>
+        <div class="md:ml-52 lg:ml-72 xl:ml-40 mt-5 flex flex-col " x-cloak>
             <div>
                 <h3 class=" md:ml-4 lg:ml-5 xl:ml-12 md:text-xl lg:text-2xl xl:text-3xl font-light tracking-wide leading-relaxed lowercase"
                     x-show="!scrollTop" @scroll.window="scrollTop = (window.pageYOffset > 1) ? false : true"
@@ -41,7 +41,7 @@
                     x-transition:leave-start="opacity-100 transform translate-y-0"
                     x-transition:leave-end="opacity-0 transform -translate-y-1/2">responsive</h3>
             </div>
-            <div class="leading-7 tracking-wide lg:text-lg 2xl:text-xl px-10     lowercase md:ml-64 lg:ml-72 xl:ml-96 w-[60%] xl:mt-5"
+            <div class="leading-7 tracking-wide lg:text-lg 2xl:text-xl md:px-4 lg:pl-8 xl:pl-10 xl:pr-4     lowercase md:ml-64 lg:ml-72 xl:ml-96 w-[60%] xl:mt-5"
             x-show="!scrollTop3" @scroll.window="scrollTop3 = (window.pageYOffset > 201) ? false : true"
             x-transition:enter="transition ease-in-out duration-1000"
             x-transition:enter-start="opacity-0 transform translate-y-1/4"

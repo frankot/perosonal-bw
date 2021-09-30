@@ -57,7 +57,7 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 15px;
   
 }
 
@@ -69,14 +69,14 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(17, 24, 39);
+  background: black;
 
 }
-/* 
-Handle on hover
+
+
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(20, 30, 39)
-} */
+  background: rgba(17, 24, 39);
+}
 
 html {
   scroll-behavior: smooth;
