@@ -3,14 +3,15 @@
         display: none !important
     }
 </style>
-<div class="container md:h-[300px] xl:h-[484px] md:mt-40  flex justify-center items-center relative">
-    <div class=" w-[85%] h-[70%] uppercase "  x-data="{ scrollTop: true, scrollTop2: true, scrollTop3: true }">
+<div class="hidden md:flex container md:h-[300px] xl:h-[484px] md:mt-40   justify-center items-center relative">
+    <div class=" w-[85%] h-[70%] uppercase " x-data="{ scrollTop: true, scrollTop2: true, scrollTop3: true }">
 
-        <h2 class="inline-block font-semibold md:mb-4 xl:mb-8 mt-2 xl:ml-1 md:ml-20 lg:ml-24 md:text-sm md:tracking-wider lg:text-base "
+        <h2 class="inline-block font-semibold tracking-wide md:text-sm md:mb-4 xl:mb-8 mt-2 xl:ml-1 md:ml-20 lg:ml-24 md:tracking-wider lg:text-base "
             id="about"><a href="#create"> I'm Frank</a></h2>
-        <h1 class="md:text-6xl lg:text-7xl xl:text-8xl font-thin tracking-wide text-center" id="create">I create
+        <h1 class=" md:text-6xl lg:text-7xl xl:text-8xl font-thin tracking-wide text-center" id="create">I
+            create
             websites</h1>
-        <div class="md:ml-52 lg:ml-72 xl:ml-40 mt-5 flex flex-col " x-cloak>
+        <div class="hidden md:ml-52 lg:ml-72 xl:ml-40 mt-5 md:flex flex-col " x-cloak>
             <div>
                 <h3 class=" md:ml-4 lg:ml-5 xl:ml-12 md:text-xl lg:text-2xl xl:text-3xl font-light tracking-wide leading-relaxed lowercase"
                     x-show="!scrollTop" @scroll.window="scrollTop = (window.pageYOffset > 1) ? false : true"
@@ -42,30 +43,45 @@
                     x-transition:leave-end="opacity-0 transform -translate-y-1/2">responsive</h3>
             </div>
             <div class="leading-7 tracking-wide lg:text-lg 2xl:text-xl md:px-4 lg:pl-8 xl:pl-10 xl:pr-4     lowercase md:ml-64 lg:ml-72 xl:ml-96 w-[60%] xl:mt-5"
-            x-show="!scrollTop3" @scroll.window="scrollTop3 = (window.pageYOffset > 201) ? false : true"
-            x-transition:enter="transition ease-in-out duration-1000"
-            x-transition:enter-start="opacity-0 transform translate-y-1/4"
-            x-transition:enter-end="opacity-100 transform translate-y-0"
-            x-transition:leave="transition ease-out duration-500"
-            x-transition:leave-start="opacity-100 transform translate-y-0"
-            x-transition:leave-end="opacity-0 transform translate-y-1/2">
-            <p class="normal-case"> If you need a webiste that reflects the image and
-                style of your
-                brand, is customly desgined to suit all your
-                needs and looks
-                perfect on any device...
-            </p>
+                x-show="!scrollTop3" @scroll.window="scrollTop3 = (window.pageYOffset > 201) ? false : true"
+                x-transition:enter="transition ease-in-out duration-1000"
+                x-transition:enter-start="opacity-0 transform translate-y-1/4"
+                x-transition:enter-end="opacity-100 transform translate-y-0"
+                x-transition:leave="transition ease-out duration-500"
+                x-transition:leave-start="opacity-100 transform translate-y-0"
+                x-transition:leave-end="opacity-0 transform translate-y-1/2">
+                <p class="normal-case"> If you need a webiste that reflects the image and
+                    style of your
+                    brand, is customly desgined to suit all your
+                    needs and looks
+                    perfect on any device...
+                </p>
 
 
-            <div
-                class="mt-8 border-2 border-gray-900 inline-block lg:text-lg 2xl:text-2xl px-4 py-1 hover:text-[#ece6e6] hover:bg-gray-900 uppercase tracking-widest font-light">
-                <a href="/contact">HIRE ME</a>
+                <div
+                    class="mt-8 border-2 border-gray-900 inline-block lg:text-lg 2xl:text-2xl px-4 py-1 hover:text-[#ece6e6] hover:bg-gray-900 uppercase tracking-widest font-light ">
+                    <a href="/contact">HIRE ME</a>
+                </div>
+
             </div>
-
         </div>
-        </div>
-     
     </div>
 
 
+
+</div>
+<div class="md:hidden mt-[25%] mx-11 tracking-wide">
+    <h3 class="uppercase text-xs font-bold ml-[2px]">I'm Frank</h3>
+    <div class="text-4xl  uppercase font-light mt-3 space-y-3">
+        <h1 class="">i create </h1>
+        <h1 class="ml-5">websites</h1>
+    </div>
+    <div class="inline-block ml-5 mt-3 lowercase space-y-3 text-xl font-light ">
+        <h3 class="ml-10">Modern</h3>
+        <h3 class="ml-24">Simple</h3>
+        <h3 class="ml-36">Responsive</h3>
+    </div>
+    <div class="absolute bottom-3 right-4">
+        <svg class="w-7 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7m14-8l-7 7-7-7"></path></svg>
+    </div>
 </div>

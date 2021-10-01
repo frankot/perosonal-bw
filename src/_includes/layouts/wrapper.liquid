@@ -1,5 +1,6 @@
 ---
-title: def
+title: Frank Web Development
+description: Frank Web Developer simple, responsive and fast websites from scratch
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -18,9 +19,9 @@ title: def
 
 </head>
 
-<body class="bg-main  text-gray-900 font-custom antialiased hidden md:block ">
-
-
+<body class="bg-main  text-gray-900 font-custom antialiased   min-h-[100vh] flex flex-col">
+    {% include components/nav %}
+    
     {% block content %}
     {{ content | safe }}
     {% endblock %}

@@ -1,0 +1,14 @@
+---
+layout: layouts/wrapper
+---
+<div>
+    <h1 class="text-4xl text-center my-12 uppercase font-mono">web_notes</h1>
+    <div class="w-3/4 mx-auto grid grid-cols-2 grid-flow-row  border-2 border-gray-900 gap-5 px-10 py-5">
+        {% for note in collections.note %}
+        <a href="{{ note.url }}">
+            <h2 class="text-xl font-semibold">{{ note.data.title }}</h2>
+            <p>{{ note.data.description }}</p>
+        </a>
+        {% endfor %}
+    </div>
+</div>

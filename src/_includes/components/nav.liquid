@@ -1,12 +1,29 @@
 <nav>
-    <div class="flex justify-between md:mt-8 md:mx-12 lg:mt-10 lg:mx-16">
+    <div class="hidden md:flex justify-between md:mt-8 md:mx-12 lg:mt-10 lg:mx-16">
         <div class="">
-            <a href="#" class="md:text-2xl  lg:text-3xl tracking-widest font-semibold">FR.OTRE</a>
+            <a href="/" class="md:text-2xl  lg:text-3xl tracking-widest font-semibold">FR.OTRE</a>
         </div>
         <div class="flex gap-5 md:text-base lg:text-lg xl:text-xl">
-            <button class="btn_nav"><a href="/home" id="anim">WORK</a></button>
+            <button class="btn_nav"><a href="/notes" id="anim">NOTES</a></button>
             <button class="btn_nav"><a href="#about" id="anim">ABOUT</a></button>
             <button class="btn_nav"><a href="/home" id="anim">CONTACT</a></button>
         </div>
-    </div>  
+    </div>
+    <div class="flex relative md:hidden justify-between p-4" x-data="{isOpen: false}">
+        <a href="/" class="text-xl tracking-wide font-semibold ">FR.OTRE</a>
+        <div class=""><button><img src="/assets/img/Location_dot_black.svg.png" class="h-7" alt=""
+                    @click="isOpen=!isOpen"></button></div>
+        <div class="absolute -bottom-8 right-14 space-x-4 border-b-2 border-gray-900" x-show="isOpen"
+            @click.away="isOpen=false" x-transition:enter="transition ease-in-out duration-300"
+            x-transition:enter-start="opacity-0 transform scale-x-0 translate-x-1/2"
+            x-transition:enter-end="opacity-100 transform scale-x-100 translate-x-0"
+            x-transition:leave="transition ease-in-out duration-300"
+            x-transition:leave-start="opacity-100 transform scale-x-100 translate-x-0"
+            x-transition:leave-end="opacity-0 transform scale-x-0 translate-x-1/2">
+            <button class=""><a href="/notes">NOTES</a></button>
+            <button class=""><a href="#about">ABOUT</a></button>
+            <button class=""><a href="/home">CONTACT</a></button>
+        </div>
+    </div>
+
 </nav>
