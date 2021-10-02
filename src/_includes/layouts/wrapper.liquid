@@ -19,14 +19,14 @@ description: Frank Web Developer simple, responsive and fast websites from scrat
 
 </head>
 
-<body class="bg-main  text-gray-900 font-custom antialiased   min-h-[100vh] flex flex-col">
-    {% include components/nav %}
-    
-    {% block content %}
-    {{ content | safe }}
-    {% endblock %}
-    
-    {% include components/footer %} 
+<body class="bg-main  text-gray-900 font-custom antialiased    flex flex-col">
+    <div class="min-h-screen">
+        {% include components/nav %}
+        {% block content %}
+        {{ content | safe }}
+        {% endblock %}
+    </div>
+    {% include components/footer %}
 
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </body>
