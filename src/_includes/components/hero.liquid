@@ -13,16 +13,15 @@
                 websites</h1>
         </div>
         <div class="inline-block md:hidden mt-[22%] ml-[10%]">
-            <h3 class="uppercase text-xs font-bold ml-[2px]">I'm Frank</h3>
+            <h3 class="uppercase text-xs font-bold mr-24 inline-block">I'm Frank</h3>
             <div class="text-[2.8rem]  uppercase font-thin mt-3 ">
                 <h1 class="">i create </h1>
                 <h1 class="ml-5">websites</h1>
             </div>
         </div>
-        <div class=" md:ml-52 lg:ml-72 xl:ml-40 mt-5 flex flex-col " x-cloak>
+        <div class="md:ml-52 lg:ml-72 xl:ml-40 mt-5 flex flex-col " x-cloak>
             <div>
-                <h3 class=" md:ml-4 lg:ml-5 xl:ml-12 md:text-xl lg:text-2xl xl:text-3xl font-light tracking-wide leading-relaxed lowercase"
-                    
+                <h3 class="ml-20 md:ml-4 lg:ml-5 xl:ml-12 md:text-xl lg:text-2xl xl:text-3xl font-light tracking-wide leading-relaxed lowercase"
                     x-show="!scrollTop" @scroll.window="scrollTop = (window.pageYOffset > 1) ? false : true"
                     x-transition:enter="transition ease-in-out duration-700"
                     x-transition:enter-start="opacity-0 transform translate-y-[-85%]"
@@ -32,8 +31,9 @@
                     x-transition:leave-end="opacity-0 transform -translate-y-1/2">modern</h3>
             </div>
             <div>
-                <h3 class="md:ml-24 lg:ml-28 xl:ml-40 md:text-xl lg:text-2xl xl:text-3xl font-light tracking-wide leading-relaxed lowercase "
-                    x-show="!scrollTop2" @scroll.window="scrollTop2 = (window.pageYOffset > 101) ? false : true"
+                <h3 class="ml-32 md:ml-24 lg:ml-28 xl:ml-40 md:text-xl lg:text-2xl xl:text-3xl font-light tracking-wide leading-relaxed lowercase "
+                    x-show="!scrollTop2"
+                    @scroll.window="scrollTop2 = (window.pageYOffset > scroll_values[0]) ? false : true"
                     x-transition:enter="transition ease-in-out duration-700"
                     x-transition:enter-start="opacity-0 transform translate-y-[-85%]"
                     x-transition:enter-end="opacity-100 transform translate-y-0"
@@ -42,8 +42,9 @@
                     x-transition:leave-end="opacity-0 transform -translate-y-1/2">simple</h3>
             </div>
             <div>
-                <h3 class="md:ml-44 lg:ml-48 xl:ml-[16.5rem] md:text-xl lg:text-2xl xl:text-3xl font-light tracking-wide leading-relaxed lowercase "
-                    x-show="!scrollTop3" @scroll.window="scrollTop3 = (window.pageYOffset > 201) ? false : true"
+                <h3 class="ml-44 md:ml-44 lg:ml-48 xl:ml-[16.5rem] md:text-xl lg:text-2xl xl:text-3xl font-light tracking-wide leading-relaxed lowercase "
+                    x-show="!scrollTop3"
+                    @scroll.window="scrollTop3 = (window.pageYOffset > scroll_values[1]) ? false : true"
                     x-transition:enter="transition ease-in-out duration-700"
                     x-transition:enter-start="opacity-0 transform translate-y-[-85%]"
                     x-transition:enter-end="opacity-100 transform translate-y-0"
@@ -51,8 +52,9 @@
                     x-transition:leave-start="opacity-100 transform translate-y-0"
                     x-transition:leave-end="opacity-0 transform -translate-y-1/2">responsive</h3>
             </div>
-            <div class="leading-7 tracking-wide lg:text-lg 2xl:text-xl md:px-4 lg:pl-8 xl:pl-10 xl:pr-4     lowercase md:ml-64 lg:ml-72 xl:ml-96 w-[60%] xl:mt-5"
-                x-show="!scrollTop3" @scroll.window="scrollTop3 = (window.pageYOffset > 201) ? false : true"
+            <div class=" p-12 leading-7 tracking-wide lg:text-lg 2xl:text-xl md:px-4 lg:pl-8 xl:pl-10 xl:pr-4     lowercase md:ml-64 lg:ml-72 xl:ml-96 md:w-[60%] xl:mt-5"
+                x-show="!scrollTop3"
+                @scroll.window="scrollTop3 = (window.pageYOffset > scroll_values[1]) ? false : true"
                 x-transition:enter="transition ease-in-out duration-1000"
                 x-transition:enter-start="opacity-0 transform translate-y-1/4"
                 x-transition:enter-end="opacity-100 transform translate-y-0"
@@ -76,20 +78,28 @@
         </div>
     </div>
 
-    <script>
-        let device = [];
-        if (window.innerWidth > 640 ) {
-            device = [101, 201]
-        }
-        else {
-            device =[]
-        }
-    </script>
+
 
 </div>
-<div class="md:hidden absolute bottom-3 right-4">
-    <svg class="w-7 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7m14-8l-7 7-7-7"></path></svg>
+<div class="md:hidden absolute bottom-3 right-4" x-show="!is_scrolled">
+    <svg class="w-7 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7m14-8l-7 7-7-7"></path>
+    </svg>
 </div>
+
+<script>
+    let scroll_values; //scroll values for  delay on animations
+    let is_mobile = 1; // 1 > desktop 0 > mobile 
+    if (window.innerWidth > 640) {
+        scroll_values = [101, 201]
+        is_mobile = 0;
+    } else {
+        scroll_values = [50, 100]
+    }
+    let is_scrolled = window.pageYOffset > 5 ? true : false;
+   
+</script>
 <!-- <div class="md:hidden mt-[20%] mx-8 tracking-wide">
    
     <h3 class="uppercase text-xs font-bold ml-[2px]">I'm Frank</h3>
