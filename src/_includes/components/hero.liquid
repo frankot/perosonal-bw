@@ -3,17 +3,26 @@
         display: none !important
     }
 </style>
-<div class="hidden md:flex container md:h-[300px] xl:h-[484px] md:mt-40   justify-center items-center relative">
+<div class="flex container md:h-[300px] xl:h-[484px] md:mt-40   justify-center items-center relative">
     <div class=" w-[85%] h-[70%] uppercase " x-data="{ scrollTop: true, scrollTop2: true, scrollTop3: true }">
-
-        <h2 class="inline-block font-semibold tracking-wide md:text-sm md:mb-4 xl:mb-8 mt-2 xl:ml-1 md:ml-20 lg:ml-24 md:tracking-wider lg:text-base "
-            id="about"><a href="#create"> I'm Frank</a></h2>
-        <h1 class=" md:text-6xl lg:text-7xl xl:text-8xl font-thin tracking-wide text-center" id="create">I
-            create
-            websites</h1>
-        <div class="hidden md:ml-52 lg:ml-72 xl:ml-40 mt-5 md:flex flex-col " x-cloak>
+        <div class="hidden md:inline-block">
+            <h2 class="inline-block font-semibold tracking-wide md:text-sm md:mb-4 xl:mb-8 mt-2 xl:ml-1 md:ml-20 lg:ml-24 md:tracking-wider lg:text-base "
+                id="about"><a href="#create"> I'm Frank</a></h2>
+            <h1 class=" md:text-6xl lg:text-7xl xl:text-8xl font-thin tracking-wide text-center" id="create">I
+                create
+                websites</h1>
+        </div>
+        <div class="inline-block md:hidden mt-[22%] ml-[10%]">
+            <h3 class="uppercase text-xs font-bold ml-[2px]">I'm Frank</h3>
+            <div class="text-[2.8rem]  uppercase font-thin mt-3 ">
+                <h1 class="">i create </h1>
+                <h1 class="ml-5">websites</h1>
+            </div>
+        </div>
+        <div class=" md:ml-52 lg:ml-72 xl:ml-40 mt-5 flex flex-col " x-cloak>
             <div>
                 <h3 class=" md:ml-4 lg:ml-5 xl:ml-12 md:text-xl lg:text-2xl xl:text-3xl font-light tracking-wide leading-relaxed lowercase"
+                    
                     x-show="!scrollTop" @scroll.window="scrollTop = (window.pageYOffset > 1) ? false : true"
                     x-transition:enter="transition ease-in-out duration-700"
                     x-transition:enter-start="opacity-0 transform translate-y-[-85%]"
@@ -67,10 +76,21 @@
         </div>
     </div>
 
-
+    <script>
+        let device = [];
+        if (window.innerWidth > 640 ) {
+            device = [101, 201]
+        }
+        else {
+            device =[]
+        }
+    </script>
 
 </div>
-<div class="md:hidden mt-[20%] mx-8 tracking-wide">
+<div class="md:hidden absolute bottom-3 right-4">
+    <svg class="w-7 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7m14-8l-7 7-7-7"></path></svg>
+</div>
+<!-- <div class="md:hidden mt-[20%] mx-8 tracking-wide">
    
     <h3 class="uppercase text-xs font-bold ml-[2px]">I'm Frank</h3>
     <div class="text-[2.8rem]  uppercase font-thin mt-3 ">
@@ -85,4 +105,4 @@
     <div class="absolute bottom-3 right-4">
         <svg class="w-7 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7m14-8l-7 7-7-7"></path></svg>
     </div>
-</div>
+</div> -->
