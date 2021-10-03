@@ -13,7 +13,7 @@
                 websites</h1>
         </div>
         <div class="inline-block md:hidden mt-[22%] ml-[10%]">
-            <h3 class="uppercase text-xs font-bold mr-24 inline-block">I'm Frank</h3>
+            <h3 class="uppercase text-xs font-bold mr-24 inline-block pt-2" id="about_m">I'm Frank</h3>
             <div class="text-[2.8rem]  uppercase font-thin mt-3 ">
                 <h1 class="">i create </h1>
                 <h1 class="ml-5">websites</h1>
@@ -52,7 +52,7 @@
                     x-transition:leave-start="opacity-100 transform translate-y-0"
                     x-transition:leave-end="opacity-0 transform -translate-y-1/2">responsive</h3>
             </div>
-            <div class=" p-12 leading-7 tracking-wide lg:text-lg 2xl:text-xl md:px-4 lg:pl-8 xl:pl-10 xl:pr-4     lowercase md:ml-64 lg:ml-72 xl:ml-96 md:w-[60%] xl:mt-5"
+            <div class="p-8 pb-4 leading-7 tracking-wide text-base lg:text-lg 2xl:text-xl md:px-4 lg:pl-8 xl:pl-10 xl:pr-4     lowercase md:ml-64 lg:ml-72 xl:ml-96 md:w-[60%] xl:mt-5"
                 x-show="!scrollTop3"
                 @scroll.window="scrollTop3 = (window.pageYOffset > scroll_values[1]) ? false : true"
                 x-transition:enter="transition ease-in-out duration-1000"
@@ -61,16 +61,21 @@
                 x-transition:leave="transition ease-out duration-500"
                 x-transition:leave-start="opacity-100 transform translate-y-0"
                 x-transition:leave-end="opacity-0 transform translate-y-1/2">
-                <p class="normal-case"> If you need a webiste that reflects the image and
-                    style of your
-                    brand, is customly desgined to suit all your
-                    needs and looks
-                    perfect on any device...
+                <p class="normal-case"> If you need a webiste that:
+                    <ul class="dashed font-light normal-case">
+                        <li>reflects the image and
+                            style of your brand</li>
+                        <li>is customly desgined to suit all your
+                            needs</li>
+                        <li>looks
+                            perfect on any device</li>
+                        <li>SEO friendly...</li>
+                    </ul>
                 </p>
 
 
                 <div
-                    class="mt-8 border-2 border-gray-900 inline-block lg:text-lg 2xl:text-2xl px-4 py-1 hover:text-[#ece6e6] hover:bg-gray-900 uppercase tracking-widest font-light ">
+                    class="text-center mt-8 border-2  border-gray-900 md:inline-block lg:text-lg 2xl:text-2xl px-4 py-1 hover:text-[#ece6e6] hover:bg-gray-900 uppercase tracking-widest font-light ">
                     <a href="/contact">HIRE ME</a>
                 </div>
 
@@ -81,12 +86,15 @@
 
 
 </div>
-<div class="md:hidden absolute bottom-3 right-4" x-show="!is_scrolled">
-    <svg class="w-7 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7m14-8l-7 7-7-7"></path>
-    </svg>
-</div>
+<!-- <div class="md:hidden absolute bottom-3 right-4" x-show="!is_scrolled">
+    <a href="#about_m">
+        <svg class="w-7 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7m14-8l-7 7-7-7">
+            </path>
+        </svg>
+    </a>
+</div> -->
 
 <script>
     let scroll_values; //scroll values for  delay on animations
@@ -98,21 +106,4 @@
         scroll_values = [50, 100]
     }
     let is_scrolled = window.pageYOffset > 5 ? true : false;
-   
 </script>
-<!-- <div class="md:hidden mt-[20%] mx-8 tracking-wide">
-   
-    <h3 class="uppercase text-xs font-bold ml-[2px]">I'm Frank</h3>
-    <div class="text-[2.8rem]  uppercase font-thin mt-3 ">
-        <h1 class="">i create </h1>
-        <h1 class="ml-5">websites</h1>
-    </div>
-    <div class="inline-block ml-5 mt-3 lowercase space-y-3 text-xl font-light ">
-        <h3 class="ml-10">Modern</h3>
-        <h3 class="ml-24">Simple</h3>
-        <h3 class="ml-36">Responsive</h3>
-    </div>
-    <div class="absolute bottom-3 right-4">
-        <svg class="w-7 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7m14-8l-7 7-7-7"></path></svg>
-    </div>
-</div> -->

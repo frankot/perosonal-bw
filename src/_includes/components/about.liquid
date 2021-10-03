@@ -3,8 +3,8 @@
         display: none !important
     }
 </style>
-<div class=" container h-[60vh]" x-cloak x-data="{scroll: true}">
-    <div class=" grid md:grid-cols-3 xl:grid-cols-2 ml-5 md:gap-48 lg:gap-32 xl:-mt-24  md:ml-10 lg:ml-16 xl:ml-20 " x-show="!scroll"
+<div class="  min-h-[60vh]" x-cloak x-data="{scroll: true}">
+    <div class="text-sm font-bold tracking-widest md:grid md:grid-cols-3 xl:grid-cols-2 ml-5 md:gap-48 lg:gap-32 xl:-mt-24  md:ml-10 lg:ml-16 xl:ml-20 " x-show="!scroll"
         @scroll.window="scroll = (window.pageYOffset > 250) ? false : true"
         x-transition:enter="transition ease-in-out duration-700"
         x-transition:enter-start="opacity-0 transform translate-y-1/4"
@@ -12,8 +12,8 @@
         x-transition:leave="transition ease-out duration-500"
         x-transition:leave-start="opacity-100 transform translate-y-0"
         x-transition:leave-end="opacity-0 transform translate-y-1/4">
-        <div class="mt-12 leading-7 tracking-wide font-light px-10 relative md:col-span-2 xl:col-span-1  lg:ml-14 xl:ml-0">
-            <h1 class="tracking-widest font-light md:text-xl lg:text-2xl xl:text-3xl">ABOUT</h1>
+        <div class="my-12 leading-7 tracking-wide font-light px-10 relative md:col-span-2 xl:col-span-1  lg:ml-14 xl:ml-0">
+            <h1 class="tracking-widest text-lg md:font-light md:text-xl lg:text-2xl xl:text-3xl">ABOUT</h1>
             <p class=" md:mt-6 lg:mt-10 tracking-wide  lg:text-lg md:mr-10 lg:mr-0">My name is Franciszek Otrębski. I work as a Python programmer based in Warsaw,
                 Poland.
                 But what I really love
@@ -21,13 +21,17 @@
                 don't
                 use Wordpress, Wix or insert already made elements. I simply enjoy doing everything by myself.
             </p>
-            <div class=" absolute xl:-left-20  md:top-[3.7rem] md:-left-12 lg:top-20 xl:top-20 bg-main ">
-                <img src="/assets/img/me3.jpg" alt="" class="md:h-[4.5rem] lg:h-20 xl:h-24 rounded-tl-xl rounded-bl-xl " >
+            <div class=" absolute -left-7 top-8 xl:-left-16  md:top-[3.7rem] md:-left-12 lg:top-20 xl:top-20 bg-main ">
+                <img src="/assets/img/me3.jpg" alt="" class="rounded-br-xl rounded-tr-xl h-16 md:h-[4.5rem] lg:h-20 xl:h-24 md:rounded-tl-xl md:rounded-bl-xl md:rounded-br-none md:rounded-tr-none" >
             </div>
         </div>
-
-
+   
     </div>
+    <div class="w-2/3 mx-auto text-center font-light uppercase border-2 border-gray-900 px-4 py-2 my-5 md:hidden" x-show="!scroll"
+    @scroll.window="scroll = (window.pageYOffset > 250) ? false : true">
+        <a href="">Stack I work with</a>
+    </div>
+  
 </div>
 
 
@@ -43,8 +47,8 @@
             <ul>
                 <li>
                     <h1>11ty</h1>
-                    <p>I write my projects using static site generator Eleventy. It provides fast static html website to
-                        end-user. It allows you for very quick and easy modifications or for adding new content by using
+                    <p>I write my projects using static site generator Eleventy. It provides fast static website to
+                        user. It allows you for very quick and easy modifications or for adding new content by using
                         templates or Markdown files.</p>
                 </li>
                 <li>
