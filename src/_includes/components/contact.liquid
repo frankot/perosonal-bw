@@ -1,0 +1,24 @@
+<style>
+    input:focus {
+        background-color: yellow;
+    }
+
+    input[type=text] {
+        border: none;
+        border-bottom: 2px solid red;
+        background-color: gainsboro;
+    }
+</style>
+<div class="flex flex-col items-center">
+    <h1>Send Me a Message</h1>
+    <p>Fill the contact form below to send me a message, and I will contact you soon</p>
+
+    <form name="contact" netlify>
+        <div class="flex flex-row items-center">
+            <input type="text" name='name' placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+        <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
+    </form>
+</div>
