@@ -16,15 +16,17 @@ description: Frank Web Developer simple, responsive and fast websites from scrat
 
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
     <link rel="stylesheet" href="/style.css?v={% version %}" />
-    
+
 </head>
 
-<body class="bg-main  text-gray-900 font-custom antialiased    flex flex-col">
+<body class="bg-main  text-gray-900 font-custom antialiased    flex flex-col ">
     <div class="min-h-screen">
         {% include components/nav %}
-        {% block content %}
-        {{ content | safe }}
-        {% endblock %}
+        <div class=" ">
+            {% block content %}
+            {{ content | safe }}
+            {% endblock %}
+        </div>
     </div>
     {% include components/footer %}
 

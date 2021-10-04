@@ -20,16 +20,16 @@
         <div class="" style="-webkit-tap-highlight-color: transparent"><button><img src="/assets/img/Location_dot_black.svg.png" class="h-8 mr-2" alt=""
                     @click="isOpen=!isOpen"
                     :class="{' transform scale-90 transition': isOpen}"></button></div>
-        <div x-cloak class="absolute -bottom-8 right-14 space-x-4 border-b-2 border-gray-900 px-2" x-show="isOpen"
+        <div x-cloak class="absolute  -bottom-8 right-14 space-x-4 border-b-[1px] border-gray-900 px-2" x-show="isOpen"
             @click.away="isOpen=false" x-transition:enter="transition ease-in-out duration-300"
             x-transition:enter-start="opacity-0 transform scale-x-0 translate-x-1/2"
             x-transition:enter-end="opacity-100 transform scale-x-100 translate-x-0"
             x-transition:leave="transition ease-in-out duration-300"
             x-transition:leave-start="opacity-60 transform scale-x-100 translate-x-0"
             x-transition:leave-end="opacity-0 transform scale-x-0 translate-x-1/2">
-            <button class=""><a href="/notes">NOTES</a></button>
-            <button class=""><a href="#about">ABOUT</a></button>
-            <button class=""><a href="/home">CONTACT</a></button>
+            <button class="font-light tracking-wide"><a href="/notes">NOTES</a></button>
+            <button class="font-light tracking-wide"><a href="#about">ABOUT</a></button>
+            <button class="font-light tracking-wide"><a href="/home">CONTACT</a></button>
         </div>
     </div>
 

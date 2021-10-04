@@ -1,0 +1,173 @@
+[33mcommit fb619219aaee3d65f2ad781aa8b69b1af3408302[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Frank <frankiantki@gmail.com>
+Date:   Sun Oct 3 19:43:58 2021 +0200
+
+    mobile hero ended
+
+[33mcommit e303e6fd3a1ab1fe7fb49703dd5f372c3ac7eaf7[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Frank <frankiantki@gmail.com>
+Date:   Sat Oct 2 20:59:16 2021 +0200
+
+    scroll values for mobile, hero done
+
+[33mcommit b7ebf4593136c266b306bacf013c83015132429d[m
+Author: Frank <frankiantki@gmail.com>
+Date:   Sat Oct 2 13:57:08 2021 +0200
+
+    before  adding script
+
+[33mcommit 4b05797e3c4d7bfa2f4d922c125e1c9e903c3582[m
+Author: Frank <frankiantki@gmail.com>
+Date:   Sat Oct 2 13:06:46 2021 +0200
+
+    hero mobile  no anim
+
+[33mcommit 1767661cb0194bd87fb5cd265aa9dd24d3020aef[m
+Author: Frank <frankiantki@gmail.com>
+Date:   Fri Oct 1 19:50:12 2021 +0200
+
+    added mobile nav and hero
+
+[33mcommit f7991e91daf87f737fbaa61ad4cc819a2f194410[m
+Author: Frank <frankiantki@gmail.com>
+Date:   Thu Sep 30 09:33:17 2021 +0200
+
+    small position tweaks
+
+[33mcommit 56bf8e7ebb6a0df51a2493bfa783ef5fd4080f73[m
+Author: Frank <frankiantki@gmail.com>
+Date:   Wed Sep 29 21:29:56 2021 +0200
+
+    Added photo again
+
+[33mcommit 4250288a3d8dab176f5f67e8b2d783d25a78e749[m
+Author: Frank <frankiantki@gmail.com>
+Date:   Wed Sep 29 21:17:47 2021 +0200
+
+    Added photo again
+
+[33mcommit d41f48d880465f5251057dba9a44ad970713b391[m
+Author: Frank <frankiantki@gmail.com>
+Date:   Wed Sep 29 20:33:25 2021 +0200
+
+    final breakpoints until medium
+
+[33mcommit 10ba0d3bb6f76642e7711689684bcb5efcd10d01[m
+Author: Frank <frankiantki@gmail.com>
+Date:   Wed Sep 29 20:16:55 2021 +0200
+
+    final breakpoints until medium
+
+[33mcommit 084acec8798bac5d13518efb29f8b2f6b584c9fe[m
+Author: Frank <frankiantki@gmail.com>
+Date:   Wed Sep 29 19:40:50 2021 +0200
+
+    2xl-md breakpoints
+
+[33mcommit 8959b01851e12d571ba313498fbf3822093931bc[m
+Author: Frank <frankiantki@gmail.com>
+Date:   Wed Sep 29 18:26:02 2021 +0200
+
+    deleted photo
+
+[33mcommit a1ac044d25979978abe1f390aa253407e88a4f52[m
+Author: Frank <frankiantki@gmail.com>
+Date:   Wed Sep 29 17:46:27 2021 +0200
+
+    about up
+
+[33mcommit ca703b501b9bb3d79fd5e9ca000f1f5a173ff264[m
+Author: Frank <frankiantki@gmail.com>
+Date:   Wed Sep 29 17:11:24 2021 +0200
+
+    about up
+
+[33mcommit f14daec5f0e0ce8c6e84284960abd0f01c406937[m
+Author: Frank <frankiantki@gmail.com>
+Date:   Wed Sep 29 17:10:01 2021 +0200
+
+    about up
+
+[33mcommit 0782dd3439756d17134f996364aee94c24da5139[m
+Author: Frank <frankiantki@gmail.com>
+Date:   Wed Sep 29 17:05:00 2021 +0200
+
+    about up
+
+[33mcommit 1c365119c336e774d32e62e633d6bed6e66d3ef2[m
+Author: Frank <frankiantki@gmail.com>
+Date:   Wed Sep 29 16:50:41 2021 +0200
+
+    about up
+
+[33mcommit d6f699b5bcaa06fad9abad54dfdd071857f4222f[m
+Author: Frank <frankiantki@gmail.com>
+Date:   Wed Sep 29 16:49:27 2021 +0200
+
+    about up
+
+[33mcommit 235096b14305732a4996fb686cf1f34ef0ca7e78[m
+Author: Frank <frankiantki@gmail.com>
+Date:   Wed Sep 29 16:46:59 2021 +0200
+
+    hero page tweak
+
+[33mcommit cfdadaeee04a9dbc7c226f2f0fe17b4614ecfb2b[m
+Author: Frank <frankiantki@gmail.com>
+Date:   Wed Sep 29 15:08:54 2021 +0200
+
+    photo rounded
+
+[33mcommit 2b04608bcb799ccab093791d4792afaaa860373a[m
+Author: Frank <frankiantki@gmail.com>
+Date:   Wed Sep 29 15:01:36 2021 +0200
+
+    photo rounded
+
+[33mcommit 30db537602e8fb919cde162e2b74aebccf5a1c63[m
+Author: Frank <frankiantki@gmail.com>
+Date:   Wed Sep 29 14:54:05 2021 +0200
+
+    photo rounded
+
+[33mcommit 9fd1c6322b8deeeb34fe89eb1133749e7024ce1f[m
+Author: Frank <frankiantki@gmail.com>
+Date:   Wed Sep 29 14:36:54 2021 +0200
+
+    added photo
+
+[33mcommit 6e5a1268874ca0639c0527078e24d42f30471ab3[m
+Author: Frank <frankiantki@gmail.com>
+Date:   Wed Sep 29 13:51:54 2021 +0200
+
+    first md breakpoints
+
+[33mcommit fb0ab963102fbac82ab9ce75a7597208974a8b9b[m
+Author: Frank <frankiantki@gmail.com>
+Date:   Tue Sep 28 17:59:49 2021 +0200
+
+    mobile hide
+
+[33mcommit 29280e3fa73b463c2c738d4e5ecd8190eb5d474a[m
+Author: Frank <frankiantki@gmail.com>
+Date:   Tue Sep 28 17:15:10 2021 +0200
+
+    first page
+
+[33mcommit 5a916a5097eb13640ed69d8c209356bcb713a0ca[m
+Author: frankot <51157102+frankot@users.noreply.github.com>
+Date:   Mon Sep 27 21:23:48 2021 +0200
+
+    Add files via upload
+
+[33mcommit dcb85094f1d51a604f4f46fad09b9219cbe2bedc[m
+Author: Frank <frankiantki@gmail.com>
+Date:   Mon Sep 27 16:36:57 2021 +0200
+
+    added antialiasing
+
+[33mcommit c07b6050bf65c84ee8cfb37224c6f5c227ae76a4[m
+Author: Frank <frankiantki@gmail.com>
+Date:   Mon Sep 27 16:25:46 2021 +0200
+
+    hero upload test

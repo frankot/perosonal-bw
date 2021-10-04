@@ -7,7 +7,8 @@
     "start": "eleventy --serve",
     "start2": "npx tailwindcss -i styles/tailwind.css -c styles/tailwind.config.js -o _site/style.css --watch --minify",
     "build": "cross-env ELEVENTY_PRODUCTION=true eleventy",
-    "netlify": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production npx tailwindcss -i styles/tailwind.css -c styles/tailwind.config.js -o _site/style.css --minify"
+    "netlify": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production npx tailwindcss -i styles/tailwind.css -c styles/tailwind.config.js -o _site/style.css --minify",
+    "zz": "concurrently \"npm run start\" \"npm run start2 \""
   },
   "keywords": [],
   "author": "",
@@ -20,5 +21,8 @@
     "html-minifier": "^4.0.0",
     "postcss-cli": "^9.0.0",
     "tailwindcss": "^2.2.15"
+  },
+  "dependencies": {
+    "concurrently": "^6.3.0"
   }
 }
