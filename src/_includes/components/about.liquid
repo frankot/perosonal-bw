@@ -3,7 +3,7 @@
         display: none !important
     }
 </style>
-<div class="min-h-[60vh] mb-14  p-10 mt-6 md:mb-8" x-cloak x-data="{scroll: true}">
+<div class="min-h-[60vh] mb-14  p-10 mt-6 md:mb-8 3xl:max-w-7xl 3xl:mx-auto 3xl:p-0" x-cloak x-data="{scroll: true}">
     <div class="text-sm font-bold tracking-widest md:grid md:grid-cols-3 lg:grid-cols-2 ml-5 md:gap-48 lg:gap-32  md:ml-10 lg:ml-32 " x-show="!scroll"
         @scroll.window="scroll = (window.pageYOffset > 450) ? false : true"
         x-transition:enter="transition ease-in-out duration-700"
@@ -12,7 +12,7 @@
         x-transition:leave="transition ease-out duration-500"
         x-transition:leave-start="opacity-100 transform translate-y-0"
         x-transition:leave-end="opacity-0 transform translate-y-1/4">
-        <div class=" leading-7 tracking-wide font-light md:px-10 lg:px-4 xl:px-12 relative md:col-span-2 lg:col-span-1 md:mt-36 lg:mt-52 lg:ml-10 xl:mt-6  xl:ml-0">
+        <div class=" leading-7 tracking-wide font-light md:px-10 lg:px-4 xl:px-12 relative md:col-span-2 lg:col-span-1 md:mt-36 lg:mt-52 lg:ml-10 xl:mt-6  xl:ml-0 3xl:px-4">
             <h1 class="tracking-widest  mr-4 text-lg md:font-light md:text-xl lg:text-2xl xl:text-3xl text-right mb-6 lg:mr-4">ABOUT</h1>
             <p class="  tracking-wide  lg:text-lg ">My name is Franciszek Otrębski. I work as a Python programmer based in Warsaw,
                 Poland.
@@ -30,7 +30,6 @@
     <div class="relative w-2/3 s-t-md mx-auto text-center font-light tracking-wide uppercase border-2  border-gray-900 px-4 py-2 mt-20 md:hidden" x-show="!scroll"
     @scroll.window="scroll = (window.pageYOffset > 250) ? false : true" >
         <a href="">Stack I work with</a>
-        <!-- <svg class="w-10 absolute -top-10 left-[40%]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg> -->
     </div>
   
 </div>

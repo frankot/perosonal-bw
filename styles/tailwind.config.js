@@ -9,6 +9,9 @@ module.exports = {
       },
       colors: {
         'main': '#ece6e6' 
+      },
+      screens: {
+        '3xl': '1920px'
       }
     },
   },
