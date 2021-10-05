@@ -88,13 +88,23 @@
 
 
 </div>
-<div class="md:hidden absolute bottom-3 right-6" x-data="{isScrolled: false}" >
-    <a href="#about_m"  style="-webkit-tap-highlight-color: transparent">
+<div class="md:hidden absolute bottom-3 right-6" x-data="{isScrolled: false}">
+    <a href="#about_m" style="-webkit-tap-highlight-color: transparent">
         <svg class="w-7 text-gray-900 " fill="none" stroke="currentColor" viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg" @scroll.window="isScrolled= window.pageYOffset > 25 ? true : false" x-show="!isScrolled">
+            xmlns="http://www.w3.org/2000/svg" @scroll.window="isScrolled= window.pageYOffset > 25 ? true : false"
+            x-show="!isScrolled">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7m14-8l-7 7-7-7">
             </path>
         </svg>
     </a>
 </div>
 
+<script>
+    let scroll_values; //scroll values for  delay on animations based on  window size
+    if (window.innerWidth > 640) {
+        scroll_values = [101, 201]
+    } else {
+        scroll_values = [50, 100]
+        is_mobile = true
+    }
+</script>

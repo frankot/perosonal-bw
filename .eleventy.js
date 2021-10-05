@@ -5,7 +5,10 @@ const htmlmin = require("html-minifier");
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("assets/img");
     eleventyConfig.addPlugin(syntaxHighlight);
-    eleventyConfig.setUseGitIgnore(false)
+    eleventyConfig.setUseGitIgnore(false);
+    eleventyConfig.addPassthroughCopy({
+        './node_modules/alpinejs/dist/cdn.js': './js/alpine.js',
+      })
 
     eleventyConfig.addShortcode('version', function () {
         return now

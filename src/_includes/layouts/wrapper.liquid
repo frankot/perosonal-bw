@@ -30,18 +30,10 @@ description: Frank Web Developer simple, responsive and fast websites from scrat
     </div>
     {% include components/footer %}
 
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="/js/alpine.js?v={% version %}"></script>
     <script>
-        let scroll_values; //scroll values for  delay on animations
         let is_mobile = false; // 
-        if (window.innerWidth > 640) {
-            scroll_values = [101, 201]
-            console.log(`is_mobile = ` + is_mobile);
-        } else {
-            scroll_values = [50, 100]
-            is_mobile = true
-            console.log(`is_mobile = ` + is_mobile);
-        }
+        console.log(`is_mobile = ` + is_mobile);
         let is_scrolled = window.pageYOffset > 5 ? true : false;
     </script>
 </body>
