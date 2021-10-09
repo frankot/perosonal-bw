@@ -101,10 +101,12 @@
 
 <script>
     let scroll_values; //scroll values for  delay on animations based on  window size
+    let is_mobile = false; 
     if (window.innerWidth > 640) {
         scroll_values = [101, 201]
     } else {
         scroll_values = [50, 100]
         is_mobile = true
     }
+    console.log(`is_mobile = ` + is_mobile);
 </script>
